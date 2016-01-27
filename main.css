@@ -1,0 +1,23 @@
+body{
+  background-color: #2c3e50
+}
+.orgComponent {
+  position: absolute;
+  height: 2em;
+  width: 25em;
+  left: 30%;
+  top: 25%;
+  font-size: 1.5em;
+}
+#btn {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+.btnReact {
+  width: 8em;
+  height: 2em;
+  background-color: #ffffcc;
+  font-size: 1em;
+  margin-right: 2em;
+}
