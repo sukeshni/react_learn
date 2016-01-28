@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDom from 'react-dom';
 
 class Btn extends React.Component {
 
@@ -27,13 +28,15 @@ class Btn extends React.Component {
   render() {
     return(
       <div>
-        <button className="btnReact" onClick={this.create}>Create</button>
-        <button className="btnReact" onClick={this.read}>Read</button>
-        <button className="btnReact" onClick={this.update}>Update</button>
-        <button className="btnReact" onClick={this.deleteOrg}>Delete</button>
+        <button id="btn1" className="btnReact" onClick={this.create}>Create</button>
+        <button id="btn2" className="btnReact" onClick={this.read}>Read</button>
+        <button id="btn3" className="btnReact" onClick={this.update}>Update</button>
+        <button id="btn4" className="btnReact" onClick={this.deleteOrg}>Delete</button>
       </div>
     );
   }
 }
 
-React.render(<Btn />, btn);
+ReactDom.render(<Btn />, btn);
+
+module.exports = Btn;
